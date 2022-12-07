@@ -1,0 +1,145 @@
+.header_landing{
+    width: 100vw;
+    top: 10px;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    justify-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+
+.menu_items > ul{
+    display: flex;
+    padding: 2px;
+    list-style: none;
+    margin: 0px 2px 0px 2px;
+}
+
+.menu_items ul li{
+    margin: 2px 6px 2px 6px;
+    border-radius: 10px;
+    padding: 8px 20px 8px 20px;
+    transition: all 0.4s ease-out;
+}
+
+.menu_items ul > li:hover{
+    background-color: #6D60A3;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 770px)
+{
+    .sidebar_unvisible{
+        transform: translateX(100%);
+        transition: all 0.5s ease-out;
+        visibility: hidden;
+    }
+
+    .sidebar_visible{
+        visibility: visible;
+        transform: translateX(0%);
+        transition: all 0.5s ease-in;
+    }
+
+    .menu_items {
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        margin: 0;
+        padding: 0;
+        z-index: 3;
+        position: fixed;
+        left: 0;
+        top: 0;
+        transition: all 1s easy;
+    }
+
+    .menu_items ul {
+        margin-top: 25%;
+        display: block;
+        text-align: center;
+    }
+
+    .menu_items ul > li{
+        margin-top: 35px;
+        font-size: 28px;
+    }
+
+    .sidebar_close{
+        color: #fff;
+        display: flex;
+        position: relative;
+        justify-content: right;
+        margin: 20px 40px;
+    }
+
+    .sidebar_close > div{
+        background-color: #fff;
+        height: 30px;
+        width: 3px;
+        position: absolute;
+    }
+
+    .sidebar_close > div:first-child{
+        transform: rotate(45deg);
+    }
+
+    .sidebar_close > div:last-child{
+        transform: rotate(-45deg);
+    }
+
+    .sidebar_burger{
+        width: 30px;
+        height: 35px;
+        align-items: center;
+        display: flex;
+        position: relative;
+    }
+
+    .sidebar_burger > div,
+    .sidebar_burger > div::before,
+    .sidebar_burger > div::after{
+        z-index: 2;
+        position: absolute;
+        width: 100%;
+        display: block;
+        background-color: #fff;
+        height: 1px;
+    }
+    
+   .sidebar_burger > div::before{
+        content: " ";
+        top: -10px;
+    }
+
+    .sidebar_burger > div::after{
+        content: " ";
+        top: 10px;
+    }
+}
+
+@media screen and (max-width: 420px)
+{
+
+}
+
+@media screen and (max-width: 380px)
+{
+    .menu_items {
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        margin: 0;
+        padding: 0;
+        z-index: 3;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+}

@@ -1,0 +1,143 @@
+.PGGM_Blk_prew{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 15%;
+    color: #fff;
+}
+
+.PGGM_Blk_prew h1{
+    font-size: 48px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.PGGM_Blk_prew p{
+    font-weight: 300;
+    font-size: 32px;
+}
+
+/* projects section w-1920 */
+
+.title_projects_sec{
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.title_projects_sec h2{
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.body_projects_sec{
+    margin-top: 40px;
+}
+
+.body_projects_sec > div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.body_projects_sec > div > div{
+    background-color: #E3E3E3;
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+}
+
+.body_projects_sec > div > div:nth-child(2n){
+    height: 420px;
+    width: 230px;
+}
+
+.body_projects_sec > div > div:nth-child(5n){
+    height: 230px;
+    width: 450px;
+}
+
+.body_projects_sec > div > div:last-child{width: 450px;height:230px;}
+
+.project_card{
+    position: relative;
+    padding: 0;
+}
+
+.visual_body{
+
+}
+
+.card_body{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #6562FF;
+    z-index: 2;
+    transition: all 0.2s ease-out;
+    visibility: hidden;
+}
+
+.card_body p{
+    visibility: hidden;
+    transition: all 0.1s ease-out;
+    padding: 8px;
+    color: #fff;
+}
+
+.project_card:hover > .card_body{
+    height: 100%;
+    transition: all 0.2s ease-in;
+    visibility: visible;
+    cursor: pointer;
+    box-shadow: 17px 18px 17px 3px rgba(0, 0, 0, 0.1);
+}
+
+.project_card:hover > .card_body p{
+    transition: all 1s ease-in;
+    visibility: visible;
+}
+
+/* SKiils section */
+
+.skills_body{
+    width: 100%;
+}
+
+@media screen and (max-width: 770px)
+{
+
+}
+
+@media screen and (max-width: 420px)
+{
+
+}
+
+@media screen and (max-width: 380px)
+{
+    .PGGM_Blk_prew{
+        position: absolute;
+        right: 0;
+        margin-top: 50%;
+        color: #fff;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .PGGM_Blk_prew h1{
+        font-size: 38px;
+        font-weight: 500;
+        color: #fff;
+        margin: 0px 10px 0px 10px;
+    }
+    
+    .PGGM_Blk_prew p{
+        font-weight: 300;
+        font-size: 24px;
+    }
+}
